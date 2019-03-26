@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+    <extension point="net.jazz.ajax.webBundles">
+        <prerequisites>
+            <requiredWebBundle id="net.jazz.ajax"/>
+            <requiredWebBundle id="com.ibm.team.repository.web"/>
+            <requiredWebBundle id="com.ibm.team.process.web"/>
+        </prerequisites>
+    </extension>
+
+
+    <extension point="com.ibm.team.process.web.operationBehaviorEditors">
+        <editor operationBehaviorId="com.siemens.bt.jazz.services.ccm.participants.SetOwnerParticipant"
+                widget="com.siemens.bt.jazz.viewlet.setOwnerUi.SetOwnerEditor"/>
+    </extension>
+
+
+
+    <extension point="net.jazz.ajax.cssBindingSets">
+        <cssBindingSet id="com.siemens.bt.jazz.viewlet.setOwnerUi.css.bindings" path="/templates/">
+            <cssBinding jsModule="com.siemens.bt.jazz.viewlet.setOwnerUi.SetOwnerEditor">
+                <cssModule path="OwnerUi.css"/>
+            </cssBinding>
+        </cssBindingSet>
+    </extension>
+
+
+</plugin>

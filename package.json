@@ -1,0 +1,28 @@
+{
+  "name": "com.siemens.bt.jazz.viewlet.setOwnerUi",
+  "version": "1.0.0",
+  "description": "Configuration of SetOwnerParticipant Web UI Widget",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js --mode production"
+  },
+  "main": "resources/SetOwnerEditor.js",
+  "keywords": [
+    "rtc",
+    "jazz",
+    "team"
+  ],
+  "author": "Alexandra De Groof, Siemens",
+  "license": "MIT",
+  "dependencies": {
+    "jazz-update-site-webpack-plugin": "^0.4.1",
+    "webpack": "^4.17.0"
+  },
+  "devDependencies": {
+    "disable-output-webpack-plugin": "^1.0.1",
+    "jazz-update-site-webpack-plugin": "^0.4.1",
+    "moment": "^2.22.2",
+    "remove-files-webpack-plugin": "^1.0.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
