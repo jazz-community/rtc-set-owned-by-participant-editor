@@ -1,3 +1,5 @@
+[![travis-svg][travis-svg]][travis]
+
 # Set Owned by Editor UI
 
 This widgets provides a UI to configure the [rtc-set-owned-by-participant](https://github.com/jazz-community/rtc-set-owned-by-participant) in the Web UI. This will not work for the eclipse Client.
@@ -47,3 +49,6 @@ For general contribution guidelines, please refer to [CONTRIBUTING.md](https://g
 ## Licensing
 Copyright (c) Siemens AG. All rights reserved.<br>
 Licensed under the [MIT](./LICENSE) License.
+
+[travis-svg]: https://travis-ci.org/jazz-community/rtc-set-owned-by-participant-editor.svg?branch=master
+[travis]: https://travis-ci.org/jazz-community/rtc-set-owned-by-participant-editor
