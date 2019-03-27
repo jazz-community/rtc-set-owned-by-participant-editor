@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 8
+script:
+- npm install
+- npm run build
+deploy:
+  provider: releases
+  api_key:
+    secure: CXpZ28We8RY/XQoZgynr78J7+RG8/zHgo8NACfa3pWaMI1Y1ZwYkDQ/sDGNnEnanaQtqMR0YT8rvxG1Ca4yhK4I35T/mF0fCBW9iyN61xHqcWF2CMCsbFwHg0p7PcV/WeDPS9v6e6jREvY2+k7OnACSEn8nDuRh43eMuroVPrTGhyaiiwyp9o6/tACv/NG6qAT4di3my41ENEaQBpDwtUCx9evnKnUjXvq069V3YjLCZeoWJS0GQoTZq6gHUmIshLZDxfLrXHR2BRJRrrC2wCwFEcdBCTJanqQZVZ4sc2whFx7pG25iB8MEcvlsA9AUME/xImqvmIhpbcvJ5YjQmdkq6B/iCTQci/CRcdkKyVGQdDwQ+bJCB39EO+a+bl+LU6fi7rbG45esSRVqf8FhlLia/gcqSdJz+uCQKSYK79mKuy5U5UhI2clpVyb5+0KquyYBphjFfKSwwVZF2yYyAD0UKPRtgTDLiYgtnvYbDpJh0HPBBw22Hrx3MTwwYVp++0zjc8ysmmYlOP4N7ZvYMd2dJbMSEIfXAg2oNYAP6BHd+H0hUIoQ0SjIktdai8IT4sBP4uJL2mcJOf3OjFtTf20vGhYjQbXXz+eUv5LIM9JPdHmn13/AcLFXNvvfNc+dmuDqd4G/FCTg0s/AQGj8qTcMSUyZ180EjFkN/OUHtKLk=
+  file: com.siemens.bt.jazz.viewlet.setOwnerUi*.zip
+  file_glob: true
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: jazz-community/rtc-set-owned-by-participant-editor
