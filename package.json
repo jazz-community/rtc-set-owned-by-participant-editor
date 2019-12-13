@@ -13,9 +13,6 @@
   ],
   "author": "Alexandra De Groof, Siemens",
   "license": "MIT",
-  "dependencies": {
-    "jazz-update-site-webpack-plugin": "^0.4.1"
-  },
   "devDependencies": {
     "disable-output-webpack-plugin": "^1.0.1",
     "jazz-update-site-webpack-plugin": "^0.4.1",
